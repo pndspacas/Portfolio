@@ -61,6 +61,7 @@ h1 {
 .main-bottom {
   text-decoration: none;
   border: 2px solid black;
+  color: black;
   padding: 4px 36px 4px 36px;
   border-radius: 5px;
   margin-left: 5px;
@@ -92,33 +93,39 @@ section {
 
 .project-1,
 .project-2,
-.project-3 {
+.project-3,
+.project-4 {
   display: flex;
   flex-direction: column;
   padding: 30px;
   justify-content: center;
   align-items: center;
   margin: 10px;
-  width: 100%;
+  flex: 1;
 }
 
 .project-1 h3,
 .project-2 h3,
-.project-3 h3 {
+.project-3 h3,
+.project-4 h3 {
   padding: 10px 0 20px 0;
+  text-align: center;
 }
 
 .project-1 p,
 .project-2 p,
-.project-3 p {
+.project-3 p,
+.project-4 p {
   padding: 10px 0 20px 0;
+  text-align: center;
 }
 
 .anime-img,
 .card-img,
-.todo-img {
+.todo-img,
+.github-img {
   height: 300px;
-  width: auto;
+  width: 370px;
   border-radius: 50px;
   transition: transform 0.5s ease;
   padding-bottom: 20px;
@@ -126,7 +133,8 @@ section {
 
 .anime-img:hover,
 .card-img:hover,
-.todo-img:hover {
+.todo-img:hover,
+.github-img:hover {
   transform: scale(1.1);
 }
 
@@ -211,6 +219,16 @@ p.text-about {
 
 footer {
   height: 200px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.hidden {
+  display: none;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -318,7 +336,8 @@ footer {
 
   .project-1,
   .project-2,
-  .project-3 {
+  .project-3,
+  .project-4 {
     font-size: 1.2em;
   }
 
